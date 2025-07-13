@@ -42,7 +42,7 @@ coffee-mania/
 🔗 https://coffeemania.infinityfreeapp.com/  
 
 ## **📸 Screenshots**  
-![Coffee Mania Homepage](images/coffee-mania-logo.png)
+![Coffee Mania Homepage](https://github.com/MuqaddasIftikhar17/coffee-mania-website/blob/main/images/coffee-mania-logo.PNG)
 ## **💡 Future Improvements**  
 - [ ] Payment gateway integration  
 - [ ] User profile customization  

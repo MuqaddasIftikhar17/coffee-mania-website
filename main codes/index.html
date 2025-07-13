@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Coffee Mania - Discover the Art of Perfect Coffee" />
+  <title>Coffee Mania</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css\index.css" />
+  <link rel="icon" href="images\favicon.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Coffee Mania</div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+      <a href="signup.php">Signup</a>
+      <a href="login.php">Login</a>
+      <a href="profile.php">profile</a>
+      <a href="logout.php">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section full-page">
+      <div class="hero-content">
+        <h1>Discover the Art of Perfect Coffee</h1>
+        <p>
+          Welcome to Coffee Mania, where every cup tells a story. Whether you're here to kickstart your day, 
+          catch up with friends, or find a quiet moment to yourself, we craft each coffee with passion and care.
+        </p>
+        <div class="buttons">
+          <a href="signup.php" class="btn btn-signup">Sign Up</a>
+          <a href="login.php" class="btn btn-login">Login</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="full-page">
+      <div class="about-wrapper">
+        <div class="about-content">
+          <h1>☕ About Us</h1>
+          <p>
+            At <strong>Coffee Mania</strong>, every cup tells a story. We're not just a coffee shop —
+            we're a community where flavors meet creativity.
+          </p>
+          <p>
+            Founded with a passion for artisanal coffee and cozy ambiance, we bring people together,
+            one sip at a time.
+          </p>
+          <a href="about.html" class="btn btn-learn-more">Explore More</a>
+        </div>
+        <div class="about-image">
+          <img src="images/about1.png" alt="Interior view of Coffee Mania café" />
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="full-page">
+      <div class="menu-content">
+        <h1>Our Menu</h1>
+        <div class="menu-gallery">
+          <div>
+            <img src="images\cappucino.jfif" alt="A cup of Cappuccino" />
+            <p>Cappuccino</p>
+          </div>
+          <div>
+            <img src="images\mocha.jfif" alt="A cup of Mocha" />
+            <p>Mocha</p>
+          </div>
+          <div>
+            <img src="images\cold brew.jfif" alt="Glass of Cold Brew coffee" />
+            <p>Cold Brew</p>
+          </div>
+        </div>
+        <a href="menu.php" class="btn btn-view-menu">View Full Menu</a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="full-page">
+      <div class="contact-content">
+        <h1>📬 Contact Us</h1>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-signup">Submit</button>
+        </form>
+        <a href="contact.php" class="btn btn-view-menu" style="margin-top: 1rem;">Go to Contact Page</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2025 Coffee Mania. All Rights Reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = contactForm.querySelector('input[name="name"]').value.trim();
+        alert(`Thank you, ${name}! Your message has been received.`);
+        contactForm.reset();
+      });
+    }
+  </script>
+
+</body>
+</html>

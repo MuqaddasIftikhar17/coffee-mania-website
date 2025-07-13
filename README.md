@@ -42,8 +42,7 @@ coffee-mania/
 🔗 https://coffeemania.infinityfreeapp.com/  
 
 ## **📸 Screenshots**  
-
-
+![Coffee Mania Homepage](Coffee Mugs/coffee-mania-logo.png)
 ## **💡 Future Improvements**  
 - [ ] Payment gateway integration  
 - [ ] User profile customization  

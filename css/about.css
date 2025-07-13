@@ -1,1 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #2e1d12;
+    background-color: #684841;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+.page-wrapper {
+    background-color: rgba(255, 255, 255, 0.95);
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e2723;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffccbc;
+}
+
+/* About Container */
+.about-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fffaf7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #4e342e;
+    margin-bottom: 20px;
+}
+
+.about-text h2 {
+    font-size: 1.8rem;
+    color: #5d4037;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #3e2723;
+}
+
+.about-text ul {
+    list-style: disc inside;
+    margin-bottom: 20px;
+    color: #3e2723;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #3e2723;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}

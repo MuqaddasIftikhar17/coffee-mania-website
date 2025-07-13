@@ -1,0 +1,283 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: hsl(0, 19%, 15%);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #a47148;
+}
+
+/* Full-page sections */
+.full-page {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #333 url('../images/mania-background.jpg') no-repeat center center/cover;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+  color: #f0f0f0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-signup,
+.btn-view-menu,
+.btn-learn-more,
+.contact-form button {
+  background-color: #a47148;
+  color: white;
+  border: none;
+}
+
+.btn-login {
+  background-color: transparent;
+  border: 2px solid #a47148;
+  color: #a47148;
+}
+
+.btn-signup:hover,
+.btn-login:hover,
+.btn-view-menu:hover,
+.btn-learn-more:hover,
+.contact-form button:hover {
+  background-color: #c89f83;
+  color: #000;
+}
+
+.btn:focus {
+  outline: 2px solid #a47148;
+  outline-offset: 2px;
+}
+
+/* About Section */
+#about {
+  background-color: #52413e;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-content h1 {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.about-image img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+/* Menu Section */
+#menu {
+  background-color: #402c28;
+}
+
+.menu-content {
+  text-align: center;
+}
+
+.menu-content h1 {
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.menu-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.menu-gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.menu-gallery p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #52413e;
+}
+
+.contact-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-content h1 {
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+/* Footer */
+.footer {
+  background-color: #46332f;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .menu-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
